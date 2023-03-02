@@ -108,6 +108,7 @@ fun MaterialCountryCodePicker(
     isReadOnly:Boolean = false,
     backgroundColor: Color = Color.Yellow,
     focusedIndicatorColor: Color = Color(0xff0090BD),
+    label: String = "Phone Number"
 ) {
     var textFieldValueState by remember { mutableStateOf(TextFieldValue(text = text)) }
     val textFieldValue = textFieldValueState.copy(text = text)
@@ -145,8 +146,8 @@ fun MaterialCountryCodePicker(
                 readOnly = isReadOnly,
                 singleLine = true,
                 visualTransformation = PhoneNumberTransformation(defaultCountry.countryCode.uppercase()),
-                placeholder = { Text( style= phonehintnumbertextstyle,
-                    text = stringResource(id = getNumberHint(defaultCountry.countryCode))) },
+                //placeholder = { Text( style= phonehintnumbertextstyle, text = stringResource(id = getNumberHint(defaultCountry.countryCode))) },
+                label = {Text(label)},
                 keyboardOptions = KeyboardOptions.Default.copy(
                     keyboardType = KeyboardType.NumberPassword,
                     autoCorrect = true,
