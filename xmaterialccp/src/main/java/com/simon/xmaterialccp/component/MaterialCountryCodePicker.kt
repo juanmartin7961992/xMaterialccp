@@ -147,7 +147,7 @@ fun MaterialCountryCodePicker(
                 singleLine = true,
                 visualTransformation = PhoneNumberTransformation(defaultCountry.countryCode.uppercase()),
                 //placeholder = { Text( style= phonehintnumbertextstyle, text = stringResource(id = getNumberHint(defaultCountry.countryCode))) },
-                label = {Text(label)},
+                label = {Text( style= phonehintnumbertextstyle, text = label)},
                 keyboardOptions = KeyboardOptions.Default.copy(
                     keyboardType = KeyboardType.NumberPassword,
                     autoCorrect = true,
