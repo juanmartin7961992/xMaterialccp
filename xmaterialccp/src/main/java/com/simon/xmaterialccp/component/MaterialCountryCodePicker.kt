@@ -108,7 +108,9 @@ fun MaterialCountryCodePicker(
     isReadOnly:Boolean = false,
     backgroundColor: Color = Color.Yellow,
     focusedIndicatorColor: Color = Color(0xff0090BD),
-    label: String = "Phone Number"
+    label: String = "Phone Number",
+    focusedLabelColor: Color = MaterialTheme.colorScheme.primary,
+    unfocusedLabelColor: Color = MaterialTheme.colorScheme.onSurface,
 ) {
     var textFieldValueState by remember { mutableStateOf(TextFieldValue(text = text)) }
     val textFieldValue = textFieldValueState.copy(text = text)
@@ -199,6 +201,8 @@ fun MaterialCountryCodePicker(
                     errorContainerColor = backgroundColor,
                     focusedIndicatorColor = focusedIndicatorColor,
                     cursorColor = focusedIndicatorColor,
+                    focusedLabelColor = focusedLabelColor,
+                    unfocusedLabelColor = unfocusedLabelColor
                 )
             )
         }
