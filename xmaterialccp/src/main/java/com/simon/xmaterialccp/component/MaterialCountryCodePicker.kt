@@ -118,20 +118,22 @@ fun MaterialCountryCodePicker(
             modifier = Modifier.clipToBounds()
         )
         {
-            OutlinedTextField(
-                modifier = modifier.
+            TextField(
+                /*modifier = modifier.
                 padding()
                     .fillMaxWidth()
                     .clip(RoundedCornerShape(textFieldShapeCornerRadiusInPercentage))
-                    .clipToBounds(),
-                shape = RoundedCornerShape(textFieldShapeCornerRadiusInPercentage),
+                    .clipToBounds(),*/
+                modifier = modifier
+                    .fillMaxWidth(),
+                //shape = RoundedCornerShape(textFieldShapeCornerRadiusInPercentage),
                 value = textFieldValue,
-                textStyle =  phonenumbertextstyle.copy(color = phonenumbertextstyle.color),
-                colors = TextFieldDefaults.outlinedTextFieldColors(
+                //textStyle =  phonenumbertextstyle.copy(color = phonenumbertextstyle.color),
+                /*colors = TextFieldDefaults.outlinedTextFieldColors(
                     focusedBorderColor = if (error) Color.Red else focusedBorderColor,
                     unfocusedBorderColor = if (error) Color.Red else unfocusedBorderColor,
                     cursorColor = cursorColor,
-                ),
+                ),*/
                 onValueChange = {
                     textFieldValueState = it
                     if (text != it.text) {
@@ -181,22 +183,23 @@ fun MaterialCountryCodePicker(
 
 
                 },
-                trailingIcon = {
+                /*trailingIcon = {
                     if (error)
                         Icon(
                             imageVector = Icons.Filled.Warning, contentDescription = "Error",
                             tint = MaterialTheme.colorScheme.error
                         )
-                }
+                },*/
+                isError = error,
             )
         }
         if (error && showErrorText)
             Text(
                 text = stringResource(id = R.string.invalid_number),
-                color = MaterialTheme.colorScheme.error,
+                color = Color.Red,
                 style = errorTextStyle,
-                fontWeight = FontWeight.Bold,
-                modifier = Modifier.padding(top = 0.8.dp, start = 4.dp)
+                //fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(start = 16.dp)
             )
     }
 
