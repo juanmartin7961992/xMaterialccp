@@ -107,7 +107,7 @@ fun MaterialCountryCodePicker(
     isEnabled:Boolean = true,
     isReadOnly:Boolean = false,
     backgroundColor: Color = Color.Yellow,
-    focusedIndicatorColor: Color = Color(0xff0090BD)
+    focusedIndicatorColor: Color = Color(0xff0090BD),
 ) {
     var textFieldValueState by remember { mutableStateOf(TextFieldValue(text = text)) }
     val textFieldValue = textFieldValueState.copy(text = text)
@@ -130,7 +130,7 @@ fun MaterialCountryCodePicker(
                     .fillMaxWidth(),
                 //shape = RoundedCornerShape(textFieldShapeCornerRadiusInPercentage),
                 value = textFieldValue,
-                //textStyle =  phonenumbertextstyle.copy(color = phonenumbertextstyle.color),
+                textStyle =  phonenumbertextstyle.copy(color = phonenumbertextstyle.color),
                 /*colors = TextFieldDefaults.outlinedTextFieldColors(
                     focusedBorderColor = if (error) Color.Red else focusedBorderColor,
                     unfocusedBorderColor = if (error) Color.Red else unfocusedBorderColor,
@@ -197,8 +197,7 @@ fun MaterialCountryCodePicker(
                     containerColor = backgroundColor,
                     errorContainerColor = backgroundColor,
                     focusedIndicatorColor = focusedIndicatorColor,
-                    cursorColor = focusedIndicatorColor
-
+                    cursorColor = focusedIndicatorColor,
                 )
             )
         }
