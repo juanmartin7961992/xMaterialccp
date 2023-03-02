@@ -105,7 +105,8 @@ fun MaterialCountryCodePicker(
     showDropDownAfterFlag:Boolean = false,
     dropDownIconTInt:Color = MaterialTheme.colorScheme.onBackground,
     isEnabled:Boolean = true,
-    isReadOnly:Boolean = false
+    isReadOnly:Boolean = false,
+    backgroundColor: Color = Color(0xff0090BD),
 ) {
     var textFieldValueState by remember { mutableStateOf(TextFieldValue(text = text)) }
     val textFieldValue = textFieldValueState.copy(text = text)
@@ -191,7 +192,10 @@ fun MaterialCountryCodePicker(
                         )
                 },*/
                 isError = error,
-            )
+                colors = TextFieldDefaults.textFieldColors(
+                    containerColor = backgroundColor,
+                    errorContainerColor = backgroundColor)
+                )
         }
         if (error && showErrorText)
             Text(
