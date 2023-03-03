@@ -1,4 +1,4 @@
-package com.simon.materialCCPExample
+package com.juanmartin7961992.materialCCPExample
 
 import org.junit.Test
 

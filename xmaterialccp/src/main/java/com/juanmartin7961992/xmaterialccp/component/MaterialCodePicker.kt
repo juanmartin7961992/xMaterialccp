@@ -1,4 +1,4 @@
-package com.simon.xmaterialccp.component
+package com.juanmartin7961992.xmaterialccp.component
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
@@ -35,12 +35,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
-import com.simon.xmaterialccp.data.CountryData
-import com.simon.xmaterialccp.data.utils.getCountryName
-import com.simon.xmaterialccp.data.utils.getFlags
-import com.simon.xmaterialccp.data.utils.getLibCountries
-import com.simon.xmaterialccp.utils.searchCountry
-import com.simon.xmaterialccp.R
+import com.juanmartin7961992.xmaterialccp.data.CountryData
+import com.juanmartin7961992.xmaterialccp.data.utils.getCountryName
+import com.juanmartin7961992.xmaterialccp.data.utils.getFlags
+import com.juanmartin7961992.xmaterialccp.data.utils.getLibCountries
+import com.juanmartin7961992.xmaterialccp.utils.searchCountry
+import com.juanmartin7961992.xmaterialccp.R
 
 class MaterialCodePicker {
     @OptIn(ExperimentalComposeUiApi::class, ExperimentalMaterial3Api::class,

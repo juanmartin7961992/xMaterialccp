@@ -1,4 +1,4 @@
-package com.simon.material3ccp
+package com.juanmartin7961992.material3ccp
 
 import org.junit.Test
 

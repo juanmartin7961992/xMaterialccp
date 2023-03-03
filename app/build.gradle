@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.simon.materialCCPExample'
+    namespace 'com.juanmartin7961992.materialCCPExample'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.simon.MaterialCCPExample"
+        applicationId "com.juanmartin7961992.MaterialCCPExample"
         minSdk 21
         targetSdk 33
         versionCode 1

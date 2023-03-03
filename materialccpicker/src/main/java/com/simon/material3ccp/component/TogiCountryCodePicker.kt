@@ -1,4 +1,4 @@
-package com.simon.material3ccp.component
+package com.juanmartin7961992.material3ccp.component
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardActions
@@ -16,10 +16,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
-import com.simon.material3ccp.data.CountryData
-import com.simon.material3ccp.data.utils.getNumberHint
-import com.simon.material3ccp.transformation.PhoneNumberTransformation
-import com.simon.material3ccp.R
+import com.juanmartin7961992.material3ccp.data.CountryData
+import com.juanmartin7961992.material3ccp.data.utils.getNumberHint
+import com.juanmartin7961992.material3ccp.transformation.PhoneNumberTransformation
+import com.juanmartin7961992.material3ccp.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

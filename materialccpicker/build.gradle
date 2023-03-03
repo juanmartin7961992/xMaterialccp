@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.simon.materialccpicker'
+    namespace 'com.juanmartin7961992.materialccpicker'
     compileSdk 33
 
     defaultConfig {

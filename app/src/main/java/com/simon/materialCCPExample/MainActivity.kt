@@ -1,4 +1,4 @@
-package com.simon.materialCCPExample
+package com.juanmartin7961992.materialCCPExample
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -19,12 +19,12 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.simon.materialCCPExample.ui.theme.MaterialCCPExampleTheme
-import com.simon.xmaterialccp.component.MaterialCountryCodePicker
-import com.simon.xmaterialccp.data.utils.checkPhoneNumber
-import com.simon.xmaterialccp.data.utils.getDefaultLangCode
-import com.simon.xmaterialccp.data.utils.getDefaultPhoneCode
-import com.simon.xmaterialccp.data.utils.getLibCountries
+import com.juanmartin7961992.materialCCPExample.ui.theme.MaterialCCPExampleTheme
+import com.juanmartin7961992.xmaterialccp.component.MaterialCountryCodePicker
+import com.juanmartin7961992.xmaterialccp.data.utils.checkPhoneNumber
+import com.juanmartin7961992.xmaterialccp.data.utils.getDefaultLangCode
+import com.juanmartin7961992.xmaterialccp.data.utils.getDefaultPhoneCode
+import com.juanmartin7961992.xmaterialccp.data.utils.getLibCountries
 
 
 class MainActivity : ComponentActivity() {
@@ -72,6 +72,7 @@ fun SelectCountryWithCountryCode() {
     ) {
 
         MaterialCountryCodePicker(
+            modifier = Modifier.padding(bottom = 32.dp),
             pickedCountry = {
                 phoneCode = it.countryPhoneCode
                 defaultLang = it.countryCode
@@ -86,7 +87,7 @@ fun SelectCountryWithCountryCode() {
             surfaceColor = MaterialTheme.colorScheme.surface,
             searchFieldPlaceHolderTextStyle = MaterialTheme.typography.titleLarge.copy(color = Color.Green),
             searchFieldTextStyle = MaterialTheme.typography.bodyMedium,
-            phonenumbertextstyle =  MaterialTheme.typography.bodyMedium,
+            //phonenumbertextstyle =  MaterialTheme.typography.bodyMedium,
             countrytextstyle =  MaterialTheme.typography.bodyMedium,
             countrycodetextstyle =  MaterialTheme.typography.bodyMedium,
             showErrorText = true,
@@ -98,7 +99,7 @@ fun SelectCountryWithCountryCode() {
             appbartitleStyle = MaterialTheme.typography.titleLarge,
             countryItemBgShape = RoundedCornerShape(5.dp),
             showCountryFlag = true,
-            showCountryCode = true,
+            showCountryCode = false,
             countryItemBgColor = MaterialTheme.colorScheme.secondaryContainer
         )
 
@@ -114,7 +115,7 @@ fun SelectCountryWithCountryCode() {
             },
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 16.dp)
+                .padding(horizontal = 16.dp, vertical = 0.dp)
                 .height(
                     50.dp
                 )

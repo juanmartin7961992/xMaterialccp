@@ -1,6 +1,6 @@
-package com.simon.xmaterialccp.data.utils
+package com.juanmartin7961992.xmaterialccp.data.utils
 
-import com.simon.xmaterialccp.data.CountryData
+import com.juanmartin7961992.xmaterialccp.data.CountryData
 
 fun getLibCountries(): List<CountryData> {
     val countries: MutableList<CountryData> = ArrayList()

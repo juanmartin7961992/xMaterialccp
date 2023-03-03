@@ -1,8 +1,8 @@
-package com.simon.material3ccp.utils
+package com.juanmartin7961992.material3ccp.utils
 
 import android.content.Context
-import com.simon.material3ccp.data.CountryData
-import com.simon.material3ccp.data.utils.getCountryName
+import com.juanmartin7961992.material3ccp.data.CountryData
+import com.juanmartin7961992.material3ccp.data.utils.getCountryName
 
 fun List<CountryData>.searchCountry(key: String, context: Context): MutableList<CountryData> {
     val tempList = mutableListOf<CountryData>()

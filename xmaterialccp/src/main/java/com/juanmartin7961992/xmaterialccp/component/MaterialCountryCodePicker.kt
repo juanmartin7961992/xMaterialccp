@@ -1,4 +1,4 @@
-package com.simon.xmaterialccp.component
+package com.juanmartin7961992.xmaterialccp.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -22,10 +22,10 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.simon.xmaterialccp.data.CountryData
-import com.simon.xmaterialccp.data.utils.getNumberHint
-import com.simon.xmaterialccp.transformation.PhoneNumberTransformation
-import com.simon.xmaterialccp.R
+import com.juanmartin7961992.xmaterialccp.data.CountryData
+import com.juanmartin7961992.xmaterialccp.data.utils.getNumberHint
+import com.juanmartin7961992.xmaterialccp.transformation.PhoneNumberTransformation
+import com.juanmartin7961992.xmaterialccp.R
 
 
 /**

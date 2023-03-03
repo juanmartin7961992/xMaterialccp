@@ -1,4 +1,4 @@
-package com.simon.materialCCPExample.ui.theme
+package com.juanmartin7961992.materialCCPExample.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -46,7 +46,7 @@ fun MaterialCCPExampleTheme(
     }
 
     MaterialTheme(
-        colorScheme = DarkColorScheme,
+        //colorScheme = DarkColorScheme,
         typography = Typography,
         content = content
     )

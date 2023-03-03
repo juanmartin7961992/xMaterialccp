@@ -1,6 +1,6 @@
-package com.simon.xmaterialccp.data.utils
+package com.juanmartin7961992.xmaterialccp.data.utils
 
-import com.simon.xmaterialccp.R
+import com.juanmartin7961992.xmaterialccp.R
 
 fun getCountryName(countryName: String): Int {
     return when (countryName) {

@@ -1,4 +1,4 @@
-package com.simon.material3ccp
+package com.juanmartin7961992.material3ccp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.simon.materialccp.test", appContext.packageName)
+        assertEquals("com.juanmartin7961992.materialccp.test", appContext.packageName)
     }
 }

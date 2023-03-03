@@ -1,4 +1,4 @@
-package com.simon.xmaterialccp
+package com.juanmartin7961992.xmaterialccp
 
 import org.junit.Test
 

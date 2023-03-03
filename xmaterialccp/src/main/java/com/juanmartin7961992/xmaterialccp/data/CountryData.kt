@@ -1,7 +1,7 @@
-package com.simon.xmaterialccp.data
+package com.juanmartin7961992.xmaterialccp.data
 
 import androidx.annotation.DrawableRes
-import com.simon.xmaterialccp.R
+import com.juanmartin7961992.xmaterialccp.R
 import java.util.*
 
 data class CountryData(

@@ -1,11 +1,11 @@
-package com.simon.material3ccp.data.utils
+package com.juanmartin7961992.material3ccp.data.utils
 
 import android.content.Context
 import android.telephony.TelephonyManager
 import androidx.compose.ui.text.intl.Locale
 import com.google.i18n.phonenumbers.PhoneNumberUtil
 import com.google.i18n.phonenumbers.Phonenumber
-import com.simon.material3ccp.data.CountryData
+import com.juanmartin7961992.material3ccp.data.CountryData
 
 fun getDefaultLangCode(context: Context): String {
     val localeCode: TelephonyManager =

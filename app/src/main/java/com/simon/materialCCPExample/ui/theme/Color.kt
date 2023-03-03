@@ -1,4 +1,4 @@
-package com.simon.materialCCPExample.ui.theme
+package com.juanmartin7961992.materialCCPExample.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

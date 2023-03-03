@@ -1,6 +1,6 @@
-package com.simon.material3ccp.data.utils
+package com.juanmartin7961992.material3ccp.data.utils
 
-import com.simon.material3ccp.R
+import com.juanmartin7961992.material3ccp.R
 
 fun getNumberHint(countryName: String): Int {
     return when (countryName) {

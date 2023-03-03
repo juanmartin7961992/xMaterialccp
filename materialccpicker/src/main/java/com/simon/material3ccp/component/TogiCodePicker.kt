@@ -1,4 +1,4 @@
-package com.simon.material3ccp.component
+package com.juanmartin7961992.material3ccp.component
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -33,12 +33,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
-import com.simon.material3ccp.data.CountryData
-import com.simon.material3ccp.data.utils.getCountryName
-import com.simon.material3ccp.data.utils.getFlags
-import com.simon.material3ccp.data.utils.getLibCountries
-import com.simon.material3ccp.utils.searchCountry
-import com.simon.material3ccp.R
+import com.juanmartin7961992.material3ccp.data.CountryData
+import com.juanmartin7961992.material3ccp.data.utils.getCountryName
+import com.juanmartin7961992.material3ccp.data.utils.getFlags
+import com.juanmartin7961992.material3ccp.data.utils.getLibCountries
+import com.juanmartin7961992.material3ccp.utils.searchCountry
+import com.juanmartin7961992.material3ccp.R
 
 class TogiCodePicker {
     @OptIn(ExperimentalComposeUiApi::class, ExperimentalMaterial3Api::class)
