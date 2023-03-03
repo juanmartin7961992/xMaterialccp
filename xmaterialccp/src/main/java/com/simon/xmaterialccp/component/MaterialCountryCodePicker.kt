@@ -87,7 +87,7 @@ fun MaterialCountryCodePicker(
     countryItemBgColor:Color = Color.Unspecified,
     countryItemBgShape:RoundedCornerShape = RoundedCornerShape(0.dp),
     phonenumbertextstyle:TextStyle = TextStyle.Default,
-    phonehintnumbertextstyle:TextStyle = TextStyle.Default,
+    phonehintnumbertextstyle:TextStyle = LocalTextStyle.current,
     searchFieldPlaceHolderTextStyle:TextStyle = MaterialTheme.typography.bodyMedium,
     searchFieldTextStyle:TextStyle = MaterialTheme.typography.bodyMedium,
     searchFieldBackgroundColor:Color = MaterialTheme.colorScheme.background.copy(0.7f),
@@ -147,7 +147,7 @@ fun MaterialCountryCodePicker(
                 singleLine = true,
                 visualTransformation = PhoneNumberTransformation(defaultCountry.countryCode.uppercase()),
                 //placeholder = { Text( style= phonehintnumbertextstyle, text = stringResource(id = getNumberHint(defaultCountry.countryCode))) },
-                label = {Text( style= phonehintnumbertextstyle, text = label)},
+                label = {Text( text = label)},
                 keyboardOptions = KeyboardOptions.Default.copy(
                     keyboardType = KeyboardType.NumberPassword,
                     autoCorrect = true,
