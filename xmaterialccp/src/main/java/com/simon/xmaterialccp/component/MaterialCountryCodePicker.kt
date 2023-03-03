@@ -117,9 +117,7 @@ fun MaterialCountryCodePicker(
     val keyboardController = LocalTextInputService.current
 
     Column {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.Center,
+        Column(
             modifier = modifier
         )
         {
@@ -205,15 +203,15 @@ fun MaterialCountryCodePicker(
                     unfocusedLabelColor = unfocusedLabelColor
                 )
             )
+            if (error && showErrorText)
+                Text(
+                    text = stringResource(id = R.string.invalid_number),
+                    color = Color.Red,
+                    style = errorTextStyle,
+                    //fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(start = 16.dp)
+                )
         }
-        if (error && showErrorText)
-            Text(
-                text = stringResource(id = R.string.invalid_number),
-                color = Color.Red,
-                style = errorTextStyle,
-                //fontWeight = FontWeight.Bold,
-                modifier = Modifier.padding(start = 16.dp)
-            )
     }
 
 }
