@@ -120,7 +120,7 @@ fun MaterialCountryCodePicker(
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center,
-            modifier = Modifier.clipToBounds()
+            modifier = modifier
         )
         {
             TextField(
@@ -129,7 +129,7 @@ fun MaterialCountryCodePicker(
                     .fillMaxWidth()
                     .clip(RoundedCornerShape(textFieldShapeCornerRadiusInPercentage))
                     .clipToBounds(),*/
-                modifier = modifier
+                modifier = Modifier
                     .fillMaxWidth(),
                 //shape = RoundedCornerShape(textFieldShapeCornerRadiusInPercentage),
                 value = textFieldValue,
